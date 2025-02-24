@@ -3,6 +3,9 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public Transform carTransform;
+
+
+    
     Vector3 carPos;
     void LateUpdate()
     {
