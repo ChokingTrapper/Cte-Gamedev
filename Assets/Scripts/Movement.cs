@@ -34,5 +34,12 @@ public class sample : MonoBehaviour
         
     }
 
-    
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if(canJump)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpVelocity);
+            canJump = false;
+        }
+    }
 }
